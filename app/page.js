@@ -40,11 +40,10 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="hero-symbol-shell">
-              <div className="hero-symbol-circle">
-                <div className="hero-symbol-circle-inner">
-                  <img src="/logo-aureya.png" alt="Símbolo Aureya" />
-                </div>
+            {/* LOGO GRANDE, SIN DOBLE CÍRCULO */}
+            <div className="hero-logo-shell">
+              <div className="hero-logo-frame">
+                <img src="/logo-aureya.png" alt="Símbolo Aureya" />
               </div>
             </div>
           </div>
