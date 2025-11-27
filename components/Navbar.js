@@ -11,12 +11,12 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="nav-left">
-        <div className="nav-logo-circle">
+        <div className="nav-logo-mark">
           <img src="/logo-aureya.png" alt="Logo Aureya" />
-        </div>
-        <div>
-          <div className="nav-title-main">Aureya</div>
-          <div className="nav-subtitle">Acompañamiento humano</div>
+          <div>
+            <div className="nav-title-main">Aureya</div>
+            <div className="nav-subtitle">Acompañamiento humano</div>
+          </div>
         </div>
       </div>
 
