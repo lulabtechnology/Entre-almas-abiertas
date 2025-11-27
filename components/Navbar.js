@@ -1,11 +1,10 @@
-import Link from "next/link";
-
 const links = [
-  { href: "/", label: "Inicio" },
-  { href: "/acompanamiento", label: "Acompañamiento" },
-  { href: "/para-quien", label: "¿Para quién?" },
-  { href: "/como-te-acompano", label: "Cómo te acompaño" },
-  { href: "/sobre-mi", label: "Sobre mí" }
+  { href: "#inicio", label: "Inicio" },
+  { href: "#acompanamiento", label: "Acompañamiento" },
+  { href: "#para-quien", label: "¿Para quién?" },
+  { href: "#formas", label: "Formas de acompañarte" },
+  { href: "#sobre-mi", label: "Sobre mí" },
+  { href: "#contacto", label: "Contacto" }
 ];
 
 export default function Navbar() {
@@ -23,16 +22,16 @@ export default function Navbar() {
 
       <nav className="nav-links">
         {links.map((item) => (
-          <Link key={item.href} href={item.href} className="nav-link">
+          <a key={item.href} href={item.href} className="nav-link">
             {item.label}
-          </Link>
+          </a>
         ))}
       </nav>
 
       <div className="nav-cta-wrap">
-        <Link href="/contacto">
+        <a href="#contacto">
           <button className="btn-gradient">Agenda una sesión</button>
-        </Link>
+        </a>
       </div>
     </header>
   );
