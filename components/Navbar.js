@@ -12,10 +12,10 @@ export default function Navbar() {
     <header className="navbar">
       <div className="nav-left">
         <div className="nav-logo-mark">
-          <img src="/logo-aureya.png" alt="Logo Aureya" />
+          <img src="/logo-aureya.png" alt="Logo Entre Almas Abiertas" />
           <div>
-            <div className="nav-title-main">Aureya</div>
-            <div className="nav-subtitle">Acompañamiento humano</div>
+            <div className="nav-title-main">Entre Almas Abiertas</div>
+            <div className="nav-subtitle">Acompañamiento humano · Aureya</div>
           </div>
         </div>
       </div>
