@@ -13,44 +13,51 @@ export default function HomePage() {
         <section id="inicio" className="section" style={{ marginTop: "2rem" }}>
           <div className="hero-grid">
             <div>
-              <p className="hero-kicker">Entre Almas Abiertas</p>
+              <p className="hero-kicker">ENTRE ALMAS ABIERTAS</p>
               <h1 className="hero-title">
-                Bienvenido a un espacio íntimo, seguro y sagrado.
+                Bienvenido a este espacio de luz para tu alma.
               </h1>
+
               <div className="card-soft" style={{ marginTop: "1rem" }}>
                 <p style={{ marginBottom: "0.7rem" }}>
-                  Bienvenido a Entre Almas Abiertas, un espacio íntimo, seguro y
-                  sagrado donde el ser humano y el ser espiritual se abrazan.
-                  Aquí, tu voz importa, tu historia es honrada y tu camino de
-                  transformación es acompañado con presencia, respeto y amor.
-                </p>
-                <p style={{ marginBottom: "0.7rem" }}>
-                  Este es un círculo donde puedes ser tú, sin etiquetas ni
-                  juicios. No importa tu cultura, tu religión, tu linaje —estelar
-                  o terrenal—, tu orientación, tu experiencia o tu edad. Aquí,
-                  tu alma encuentra un lugar para expresarse, sanar, expandirse y
-                  reconectar con su propia luz.
+                  Aquí en{" "}
+                  <span className="gold-text">Entre Almas Abiertas</span>, un
+                  espacio íntimo, seguro y sagrado donde el ser humano y el ser
+                  espiritual se abrazan. Tu voz importa, tu historia es honrada
+                  y tu camino de transformación es acompañado con presencia,
+                  respeto y amor.
                 </p>
                 <p>
-                  En Entre Almas Abiertas caminamos juntos: en armonía con la
-                  creación, en conciencia, y en la vibración más pura del amor.
+                  Este es un círculo donde puedes ser tú, sin etiquetas ni
+                  juicios. No importa tu cultura, tu religión, tu linaje —
+                  estelar o terrenal—, tu orientación, tu experiencia o tu edad.
+                  Aquí, tu alma encuentra un lugar para expresarse, sanar,
+                  expandirse y reconectar con{" "}
+                  <span className="gold-text">
+                    tu propia esencia, en armonía con la vibración sagrada de la
+                    creación.
+                  </span>
                 </p>
               </div>
 
-              <div className="hero-pill-row">
-                <span className="hero-pill">Espacio íntimo y sagrado</span>
-                <span className="hero-pill">Camino de conciencia</span>
-                <span className="hero-pill">Amor y presencia</span>
+              {/* Botones hero */}
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "0.7rem",
+                  marginTop: "1.4rem"
+                }}
+              >
+                <a href="#contacto">
+                  <button className="btn-gradient">
+                    Si sientes el llamado a ser escuchado de verdad
+                  </button>
+                </a>
+                <a href="#contacto">
+                  <GradientButton>Quiero agendar una sesión</GradientButton>
+                </a>
               </div>
-
-              <a href="#contacto">
-                <GradientButton>Quiero agendar una sesión</GradientButton>
-              </a>
-
-              <p className="hero-note" style={{ marginTop: "1rem" }}>
-                Si sientes el llamado a ser escuchado de verdad, sin juicios ni
-                etiquetas, este círculo puede ser tu lugar.
-              </p>
             </div>
 
             {/* LOGO GRANDE */}
@@ -62,31 +69,46 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ¿QUÉ ES ESTE ACOMPAÑAMIENTO? */}
+        {/* SOBRE MÍ (2° sección) */}
         <Section
-          id="acompanamiento"
-          label="Este espacio"
-          title="Acompañamiento humano y espiritual, sin dogmas."
-          lead="Cuando la vida pesa o se hace confusa, no siempre encontramos un lugar donde podamos hablar de lo humano y lo espiritual al mismo tiempo. Aquí sí."
+          id="sobre-mi"
+          label="Quién acompaña"
+          title={
+            <>
+              <span className="gold-text">AUREYA</span>, un canal de escucha y
+              presencia humana.
+            </>
+          }
+          lead="Detrás de Entre Almas Abiertas hay una mujer que camina su propio proceso de conciencia y que ha sido llamada a acompañar el de otros."
         >
-          <div className="card-soft" style={{ marginTop: "1.6rem" }}>
-            <p style={{ marginBottom: "1rem" }}>
-              En Entre Almas Abiertas recibes presencia humana auténtica, sin
-              presiones ni expectativas, donde lo que vives por dentro es honrado
-              con respeto.
-            </p>
-            <ul className="bullet-soft">
-              <li>No es religión.</li>
-              <li>No es esoterismo ni brujería.</li>
-              <li>No es coaching motivacional.</li>
-              <li>No es terapia psicológica tradicional.</li>
-              <li>No es nutrición ni nada clínico.</li>
-            </ul>
-            <p style={{ marginTop: "1rem" }}>
-              Es humanidad. Es acompañarte desde la empatía, la claridad y la
-              serenidad, sosteniéndote mientras atraviesas los procesos que tu
-              alma eligió vivir para expandir su conciencia.
-            </p>
+          <div className="grid-two">
+            <div className="card-soft">
+              <p style={{ marginBottom: "0.7rem" }}>
+                Soy <span className="gold-text">AUREYA</span>, te acompañaré y
+                guiaré durante tu recorrido a través de los procesos emocionales
+                que tu alma eligió venir a vivir en este plano para expandir su
+                conciencia.
+              </p>
+              <p style={{ marginBottom: "0.7rem" }}>
+                Mi papel no es enseñarte nada, ni corregirte, ni imponerte una
+                visión de cómo deberías vivir. Escucho lo que traes, honro tu
+                experiencia y te acompaño a mirar con más suavidad aquello que
+                hoy te duele o te confunde.
+              </p>
+              <p>
+                Sería un honor tener la oportunidad de acompañarte mientras
+                atraviesas lo que te toca vivir en este plano terrenal,
+                sosteniendo el espacio para que tu propia sabiduría interna
+                pueda expresarse y guiarte.
+              </p>
+            </div>
+
+            <div className="mini-card">
+              <p>
+                Si sientes que resuena contigo, será un honor caminar a tu lado
+                el tramo de camino que tu alma necesite.
+              </p>
+            </div>
           </div>
         </Section>
 
@@ -97,53 +119,50 @@ export default function HomePage() {
           title="Para almas que sienten que ya no pueden seguir solas."
           lead="Si tu mundo interno está en movimiento y no encuentras con quién compartirlo de forma profunda y segura, este espacio puede ser para ti."
         >
-          <div className="grid-two">
-            <div className="card-soft">
-              <h3 style={{ fontSize: "1.1rem", marginBottom: "0.8rem" }}>
-                Suele resonar con personas que:
-              </h3>
-              <ul className="bullet-soft">
-                <li>Se sienten solas o desbordadas emocionalmente.</li>
-                <li>No pueden hablar con su familia porque “no los entienden”.</li>
-                <li>
-                  Están viviendo rupturas, duelos, cambios, ansiedad o crisis
-                  personales.
-                </li>
-                <li>
-                  Quieren ser escuchadas sin juicio y con un corazón abierto.
-                </li>
-                <li>
-                  Buscan un acompañamiento cálido, humano y profundo, sin
-                  doctrinas ni técnicas confusas.
-                </li>
-                <li>
-                  Necesitan claridad cuando sienten que la vida se traba o se
-                  vuelve pesada.
-                </li>
-              </ul>
-            </div>
+          <div className="card-soft" style={{ marginTop: "1.6rem" }}>
+            <h3 style={{ fontSize: "1.1rem", marginBottom: "0.8rem" }}>
+              Si sientes que:
+            </h3>
+            <ul className="bullet-soft">
+              <li>Te encuentras sola o desbordada emocionalmente.</li>
+              <li>
+                No puedes hablar con tu familia porque “no te entienden”.
+              </li>
+              <li>
+                Estás viviendo rupturas, duelos, cambios, ansiedad o crisis
+                personales.
+              </li>
+              <li>
+                Quieres ser escuchada sin juicio y con un corazón abierto.
+              </li>
+              <li>
+                Buscas un acompañamiento cálido, humano y profundo, sin
+                doctrinas ni técnicas confusas.
+              </li>
+              <li>
+                Necesitas claridad cuando sientes que la vida se traba o se
+                vuelve pesada.
+              </li>
+              <li>
+                Estás atravesando procesos espirituales profundos y necesitas
+                sostén humano.
+              </li>
+            </ul>
 
-            <div className="mini-card">
-              <p style={{ marginBottom: "0.7rem" }}>
-                También es un espacio para quienes están en procesos espirituales
-                profundos y necesitan sostén humano: personas que sienten
-                aperturas de conciencia, cambios de ciclo o un llamado interno
-                que no logran explicar con palabras.
-              </p>
-              <p>
-                No vienes a demostrar nada, ni a encajar en una creencia. Vienes
-                a ser acompañado en lo que tu alma está viviendo ahora.
-              </p>
-            </div>
+            <p style={{ marginTop: "1rem" }}>
+              Recuerda que no vienes a demostrar nada, ni a encajar en una
+              creencia. Vienes a ser acompañada en lo que tu alma está viviendo
+              ahora.
+            </p>
           </div>
         </Section>
 
-        {/* CÓMO TE ACOMPAÑO */}
+        {/* FORMAS DE ACOMPAÑARTE */}
         <Section
           id="formas"
           label="Formas de acompañarte"
-          title="Sesiones individuales y acompañamientos de fin de semana."
-          lead="Dependiendo de lo que estés atravesando, podemos encontrarnos por hora o abrir un espacio más profundo de retiro personal."
+          title="Sesiones individuales, retiros y herramientas holísticas."
+          lead="Dependiendo de lo que estés atravesando, podemos encontrarnos por hora, abrir un espacio más profundo de retiro personal o activar herramientas holísticas que acompañen tu proceso."
         >
           <div className="grid-two">
             <div className="card-soft">
@@ -180,50 +199,64 @@ export default function HomePage() {
                 <li>Conversaciones profundas y pausadas.</li>
                 <li>Descanso emocional y espacios de silencio consciente.</li>
                 <li>Caminatas acompañadas e integración tranquila.</li>
-                <li>Apoyo constante durante todo tu proceso ese fin de semana.</li>
+                <li>
+                  Apoyo constante durante todo tu proceso ese fin de semana.
+                </li>
               </ul>
             </div>
           </div>
+
+          {/* Nuevo recuadro: herramientas holísticas */}
+          <div className="card-soft" style={{ marginTop: "1.6rem" }}>
+            <p className="tag-pill">
+              Acompañamiento con herramientas holísticas personalizadas
+            </p>
+            <h3 style={{ fontSize: "1.1rem", margin: "0.8rem 0" }}>
+              Herramientas que acompañan la transformación de tu alma
+            </h3>
+            <p>
+              Estas herramientas te ayudan a canalizar y sanar tus emociones
+              durante el proceso de transformación y expansión de tu alma, de
+              forma amorosa, consciente y en coherencia con lo que necesitas en
+              cada etapa.
+            </p>
+          </div>
         </Section>
 
-        {/* SOBRE MÍ */}
+        {/* QUÉ TE OFREZCO (ANTES "ESTE ESPACIO") */}
         <Section
-          id="sobre-mi"
-          label="Quién acompaña"
-          title="Aureya, un canal de escucha y presencia."
-          lead="Detrás de Entre Almas Abiertas hay una mujer que camina su propio proceso de conciencia y que ha sido llamada a acompañar el de otros."
+          id="que-te-ofrezco"
+          label="Este espacio"
+          title="Acompañamiento humano y espiritual, sin dogmas."
+          lead={
+            <>
+              <span className="highlight-yellow">
+                Cuando la vida pesa o se hace confusa
+              </span>
+              , no siempre encuentras un lugar donde puedas hablar de lo humano
+              y lo espiritual al mismo tiempo. En este espacio sí.
+            </>
+          }
         >
-          <div className="grid-two">
-            <div className="card-soft">
-              <p style={{ marginBottom: "0.7rem" }}>
-                Soy Aureya, te acompañaré y guiaré durante tu recorrido a través
-                de los procesos emocionales que tu alma eligió venir a vivir en
-                este plano para expandir su conciencia.
-              </p>
-              <p style={{ marginBottom: "0.7rem" }}>
-                Mi papel no es enseñarte nada, ni corregirte, ni imponerte una
-                visión de cómo deberías vivir. Escucho lo que traes, honro tu
-                experiencia y te acompaño a mirar con más suavidad aquello que
-                hoy te duele o te confunde.
-              </p>
-              <p>
-                Acompañarte es caminar contigo mientras atraviesas lo que te
-                toca vivir, sosteniendo el espacio para que tu propia sabiduría
-                interna pueda expresarse y guiarte.
-              </p>
-            </div>
-
-            <div className="mini-card">
-              <p style={{ marginBottom: "0.6rem" }}>
-                Puedes imaginar este espacio como un círculo alrededor del fuego:
-                tú te sientas, compartes lo que llevas en el corazón, y yo estoy
-                ahí contigo, presente, sin máscaras ni personajes.
-              </p>
-              <p>
-                Si sientes que resuena contigo, será un honor caminar a tu lado
-                el tramo de camino que tu alma necesite.
-              </p>
-            </div>
+          <div className="card-soft" style={{ marginTop: "1.6rem" }}>
+            <p style={{ marginBottom: "1rem" }}>
+              En{" "}
+              <span className="gold-text">Entre Almas Abiertas</span> recibes
+              presencia humana auténtica, sin presiones ni expectativas, donde
+              lo que vives por dentro es honrado con respeto.
+            </p>
+            <ul className="bullet-soft">
+              <li>No es religión.</li>
+              <li>No es esoterismo ni brujería.</li>
+              <li>No es coaching motivacional.</li>
+              <li>No es terapia psicológica tradicional.</li>
+              <li>No es nada clínico.</li>
+            </ul>
+            <p style={{ marginTop: "1rem" }}>
+              Es humanidad. Es acompañarte desde la empatía, la claridad y la
+              serenidad, sosteniéndote mientras atraviesas los procesos que tu
+              alma eligió vivir para expandir su conciencia.
+            </p>
           </div>
         </Section>
 
@@ -236,9 +269,8 @@ export default function HomePage() {
         >
           <div className="form-grid">
             <div className="card-soft">
-              {/* Cambia el correo por el real de Aureya */}
               <form
-                action="mailto:correo@entrealmasabiertas.com"
+                action="mailto:entrealmasabiertas@gmail.com"
                 method="post"
                 encType="text/plain"
               >
@@ -283,13 +315,13 @@ export default function HomePage() {
                     id="modalidad"
                     name="Modalidad"
                     type="text"
-                    placeholder="Sesiones por hora / Fin de semana de retiro, etc."
+                    placeholder="Sesiones por hora / Fin de semana / Herramientas holísticas, etc."
                   />
                 </div>
 
                 <p className="form-hint">
-                  Al enviar este mensaje no se genera ningún compromiso. Es
-                  solo el primer paso para sentir si este círculo es para ti.
+                  Al enviar este mensaje no se genera ningún compromiso. Es solo
+                  el primer paso para sentir si este círculo es para ti.
                 </p>
 
                 <div style={{ marginTop: "1.1rem" }}>
@@ -304,7 +336,8 @@ export default function HomePage() {
               </h3>
               <ul className="bullet-soft">
                 <li>
-                  Una respuesta cercana y clara, escrita por una persona real
+                  Una respuesta cercana y clara, escrita por{" "}
+                  <span className="gold-text">AUREYA</span>, una persona real
                   (no por un robot ni un mensaje genérico).
                 </li>
                 <li>
