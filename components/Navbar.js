@@ -1,9 +1,9 @@
 const links = [
   { href: "#inicio", label: "Inicio" },
-  { href: "#acompanamiento", label: "Acompañamiento" },
+  { href: "#sobre-mi", label: "Sobre mí" },
   { href: "#para-quien", label: "¿Para quién?" },
   { href: "#formas", label: "Formas de acompañarte" },
-  { href: "#sobre-mi", label: "Sobre mí" },
+  { href: "#que-te-ofrezco", label: "¿Qué te ofrezco?" },
   { href: "#contacto", label: "Contacto" }
 ];
 
@@ -14,8 +14,10 @@ export default function Navbar() {
         <div className="nav-logo-mark">
           <img src="/logo-aureya.png" alt="Logo Entre Almas Abiertas" />
           <div>
-            <div className="nav-title-main">Entre Almas Abiertas</div>
-            <div className="nav-subtitle">Acompañamiento humano · Aureya</div>
+            <div className="nav-title-main">ENTRE ALMAS ABIERTAS</div>
+            <div className="nav-subtitle">
+              Acompañamiento humano de procesos álmicos
+            </div>
           </div>
         </div>
       </div>
