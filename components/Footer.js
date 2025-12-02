@@ -3,7 +3,9 @@ export default function Footer() {
     <footer className="footer">
       <div>
         <span>
-          © {new Date().getFullYear()} Entre Almas Abiertas · Acompañamiento humano.
+          © {new Date().getFullYear()}{" "}
+          <span className="gold-text">Entre Almas Abiertas</span> ·
+          Acompañamiento humano.
         </span>
         <br />
         <span>Presencia real · Escucha profunda · Camino acompañado.</span>
