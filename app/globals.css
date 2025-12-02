@@ -493,4 +493,53 @@ body {
     padding: 1.6rem 1.4rem;
   }
 }
+/* Texto dorado para nombre y marca */
+.gold-text {
+  background: linear-gradient(
+    130deg,
+    var(--aureya-gold-soft),
+    var(--aureya-pink-soft),
+    var(--aureya-teal-soft)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+/* Amarillo suave para frases clave */
+.highlight-yellow {
+  color: #ffe899;
+  font-weight: 500;
+}
+
+/* Redes sociales (footer) */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.social-link {
+  font-size: 0.8rem;
+  color: var(--aureya-gold-soft);
+  text-decoration: none;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(246, 228, 167, 0.5);
+  background: rgba(3, 10, 47, 0.9);
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.social-link:hover {
+  background: linear-gradient(
+    130deg,
+    var(--aureya-pink),
+    var(--aureya-gold),
+    var(--aureya-teal)
+  );
+  color: #040814;
+  box-shadow: 0 0 20px rgba(255, 210, 255, 0.6);
+}
 
