@@ -262,96 +262,57 @@ export default function HomePage() {
 
         {/* CONTACTO */}
         <Section
-          id="contacto"
-          label="Agenda tu espacio"
-          title="Si sientes el llamado, puedes escribir."
-          lead="Cuéntame brevemente qué estás viviendo y qué tipo de acompañamiento sientes que necesitas ahora."
-        >
-          <div className="form-grid">
-            <div className="card-soft">
-              <form
-                action="mailto:entrealmasabiertas@gmail.com"
-                method="post"
-                encType="text/plain"
-              >
-                <div className="form-field">
-                  <label htmlFor="nombre">Nombre</label>
-                  <input
-                    id="nombre"
-                    name="Nombre"
-                    type="text"
-                    placeholder="Tu nombre"
-                    required
-                  />
-                </div>
+  id="contacto"
+  label="Agenda tu espacio"
+  title="Cuando sientas el llamado, tu camino te responderá."
+  lead="Este no es un formulario. Es un recordatorio: no estás sola."
+>
+  <div className="form-grid">
+    <div className="card-soft">
 
-                <div className="form-field">
-                  <label htmlFor="email">Correo electrónico</label>
-                  <input
-                    id="email"
-                    name="Correo"
-                    type="email"
-                    placeholder="tu@correo.com"
-                    required
-                  />
-                </div>
+      {/* FRASE EN VEZ DEL FORMULARIO */}
+      <div style={{ marginBottom: "1.6rem" }}>
+        <p style={{ marginBottom: "0.9rem", fontSize: "1rem", opacity: 0.85 }}>
+          “Cuando el alma está lista para ser escuchada,
+          la vida siempre abre un espacio para ello.”
+        </p>
+        <p style={{ opacity: 0.7 }}>
+          Si sientes que este círculo resuena contigo, puedes avanzar al siguiente paso.
+        </p>
+      </div>
 
-                <div className="form-field">
-                  <label htmlFor="mensaje">¿Qué estás viviendo?</label>
-                  <textarea
-                    id="mensaje"
-                    name="Mensaje"
-                    rows={5}
-                    placeholder="Puedes compartir brevemente qué te está pasando y qué tipo de acompañamiento buscas."
-                    required
-                  />
-                </div>
+      {/* BOTÓN QUE ABRE TU SISTEMA DE RESERVAS */}
+      <a
+        href="https://entre-almas-abiertas-reservas.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="btn-gradient" style={{ width: "100%" }}>
+          Ir a la página de reservas
+        </button>
+      </a>
+    </div>
 
-                <div className="form-field">
-                  <label htmlFor="modalidad">
-                    Modalidad que sientes que necesitas
-                  </label>
-                  <input
-                    id="modalidad"
-                    name="Modalidad"
-                    type="text"
-                    placeholder="Sesiones por hora / Fin de semana / Herramientas holísticas, etc."
-                  />
-                </div>
+    {/* TEXTO LATERAL (se mantiene tu diseño original) */}
+    <div className="mini-card">
+      <h3 style={{ fontSize: "1rem", marginBottom: "0.8rem" }}>
+        ¿Qué puedes esperar al avanzar?
+      </h3>
+      <ul className="bullet-soft">
+        <li>
+          Un espacio claro, amoroso y seguro para reservar tu acompañamiento.
+        </li>
+        <li>
+          Opciones para elegir la modalidad que más resuene con tu proceso.
+        </li>
+        <li>
+          La posibilidad de iniciar tu camino acompañada con presencia real y sin juicios.
+        </li>
+      </ul>
+    </div>
+  </div>
+</Section>
 
-                <p className="form-hint">
-                  Al enviar este mensaje no se genera ningún compromiso. Es solo
-                  el primer paso para sentir si este círculo es para ti.
-                </p>
-
-                <div style={{ marginTop: "1.1rem" }}>
-                  <GradientButton>Enviar mensaje</GradientButton>
-                </div>
-              </form>
-            </div>
-
-            <div className="mini-card">
-              <h3 style={{ fontSize: "1rem", marginBottom: "0.8rem" }}>
-                ¿Qué puedes esperar después de escribir?
-              </h3>
-              <ul className="bullet-soft">
-                <li>
-                  Una respuesta cercana y clara, escrita por{" "}
-                  <span className="gold-text">AUREYA</span>, una persona real
-                  (no por un robot ni un mensaje genérico).
-                </li>
-                <li>
-                  Si ambos lo sienten, podrán agendar una primera sesión para
-                  conocer tu proceso con más calma.
-                </li>
-                <li>
-                  Siempre tendrás libertad de decir que no. Este espacio se
-                  construye desde el respeto absoluto a tu ritmo y a tu camino.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </Section>
       </main>
 
       <Footer />
